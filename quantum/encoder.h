@@ -19,6 +19,7 @@
 
 #include "quantum.h"
 #include "util.h"
+//#define ENCODER_MAP_ENABLE
 
 void encoder_init(void);
 bool encoder_read(void);

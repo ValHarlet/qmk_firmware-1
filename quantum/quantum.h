@@ -19,6 +19,7 @@
 #include "wait.h"
 #include "matrix.h"
 #include "keymap.h"
+//#define ENCODER_MAP_ENABLE
 
 #ifdef BACKLIGHT_ENABLE
 #    include "backlight.h"
