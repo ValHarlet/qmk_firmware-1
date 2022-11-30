@@ -110,6 +110,7 @@ extern layer_state_t layer_state;
 #endif
 
 #ifdef UNICODE_COMMON_ENABLE
+#    include "unicode.h"
 #    include "process_unicode_common.h"
 #endif
 
@@ -119,10 +120,6 @@ extern layer_state_t layer_state;
 
 #ifdef TAP_DANCE_ENABLE
 #    include "process_tap_dance.h"
-#endif
-
-#ifdef PRINTING_ENABLE
-#    include "process_printer.h"
 #endif
 
 #ifdef AUTO_SHIFT_ENABLE
@@ -211,6 +208,10 @@ extern layer_state_t layer_state;
 #    include "joystick.h"
 #endif
 
+#ifdef DIGITIZER_ENABLE
+#    include "digitizer.h"
+#endif
+
 #ifdef VIA_ENABLE
 #    include "via.h"
 #endif
@@ -234,6 +235,10 @@ extern layer_state_t layer_state;
 #ifdef CAPS_WORD_ENABLE
 #    include "caps_word.h"
 #    include "process_caps_word.h"
+#endif
+
+#ifdef AUTOCORRECT_ENABLE
+#    include "process_autocorrect.h"
 #endif
 
 // For tri-layer
